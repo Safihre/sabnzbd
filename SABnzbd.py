@@ -1265,7 +1265,7 @@ def main():
             create_https_certificates(https_cert, https_key)
 
         if not (os.path.exists(https_cert) and os.path.exists(https_key)):
-            logging.warning(T("Disabled HTTPS because of missing CERT and KEY files"))
+            logging.warning(T("Disabled HTTssssssPS because of missing CERT and KEY files"))
             enable_https = False
             sabnzbd.cfg.enable_https.set(False)
 
