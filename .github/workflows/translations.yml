@@ -9,12 +9,11 @@ jobs:
   translations:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@master
       - name: Generate translations
         run: |
           python3 tools/extract_pot.py
       - name: push
-        uses: github-actions-x/commit@v2.6
+        uses: stefanzweifel/git-auto-commit-action@master
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'Update translatable texts'
+          commit_message: 'Update translatable texts'
