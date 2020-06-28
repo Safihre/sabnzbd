@@ -6,13 +6,13 @@ on:
     - develop
 
 jobs:
-  build:
+  translations:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Generate translations
         run: |
-          python tools/extract_pot.py
+          python3 tools/extract_pot.py
       - name: push
         uses: github-actions-x/commit@v2.6
         with:
