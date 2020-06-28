@@ -1,4 +1,4 @@
-name: Node CI
+name: Update translatable texts
 
 on:
   push:
