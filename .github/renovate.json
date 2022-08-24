@@ -6,7 +6,7 @@
   "schedule": [
     "before 3am on Monday"
   ],
-  "ignorePaths": [".github/workflows/**"],
+  "ignorePaths": ["tests/**", ".github/workflows/**"],
   "pip_requirements": {
     "fileMatch": ["requirements.txt", "builder/requirements.txt", "builder/osx/requirements.txt"]
   },
