@@ -3,16 +3,19 @@
   "extends": [
     "config:base"
   ],
+  "schedule": [
+    "before 3am on Monday"
+  ],
+  "ignorePaths": [".github/workflows/**"],
   "pip_requirements": {
     "fileMatch": ["requirements.txt", "builder/requirements.txt", "builder/osx/requirements.txt"]
   },
   "packageRules": [
     {
-      "matchPackagePatterns": [
-        "*"
-      ],
+      "matchPackagePatterns": ["*"],
       "groupName": "all dependencies",
-      "groupSlug": "all"
+      "groupSlug": "all",
+      "automerge": true
     }
   ],
 }
