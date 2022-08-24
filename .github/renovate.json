@@ -6,9 +6,6 @@
   "pip_requirements": {
     "fileMatch": ["requirements.txt", "builder/requirements.txt", "builder/osx/requirements.txt"]
   },
-  "groupName": "all dependencies",
-  "separateMajorMinor": false,
-  "groupSlug": "all",
   "packageRules": [
     {
       "matchPackagePatterns": [
